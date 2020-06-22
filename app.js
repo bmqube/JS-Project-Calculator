@@ -1,7 +1,7 @@
 function insert(num) {
     let mew = document.form.meowMantik.value;
     let len = mew.length;
-    if ((num == 0 && len && 0 <= mew[len-1] && mew[len-1] <= 9) || num != 0) {
+    if ((num == 0 && len && ((0 <= mew[len-1] && mew[len-1] <= 9) || mew[len-1] == '.')) || num != 0) {
             document.form.meowMantik.value = mew + num;
     }
 }
